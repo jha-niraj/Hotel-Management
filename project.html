@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management System</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--Link to the Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- Link to the Official Bootstrap File -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+<body>
+<!-- Navbar section of the page -->
+    <header>  
+        <div class="navbar" id="navbar">
+            <div class="banner">
+                <a href="#navbar"><img class="image1" id="image1" src="./Image/Hotel Image.jpeg" alt="Logo"> </a>
+            </div>
+            <div class="content">
+                <ul class="links">
+                    <li class="item"> <a href="#home">Home</a> </li>
+                    <li class="item"> <a href="#about">About</a> </li>
+                    <li class="item"> <a href="#room">Rooms</a> </li>
+                    <li class="item"> <a href="#faqs">FAQ's</a> </li>
+                    <li class="item"> <a href="#testimonials">Testimonials</a> </li>
+                    <li class="item"> <a href="#about-us">About-Us</a> </li>
+                    <li class="item book"> <a href="./Order Form/Regsitration Form/index.html">Book Now</a> </li>
+                </ul>
+            </div>
+        </div>
+    </header>     
+    
+<!-- Front Name of the Hotel -->
+    <div class="front-page">
+        <div class="poster">
+            <h1 class="text1">Welcome To <span class="text1">IMPERIAL</span></h1>
+        </div>
+    </div>
+
+<!-- This is the section of the page which asks for the check-in, check-out date and no. of rooms. -->
+    <section class="info">
+        <div class="first">
+            <div class="data">
+                <label for="search">Enter the Hotel Location</label><br>
+                <input type="text" placeholder="Enter the Location">
+            </div>
+            <div class="data">
+                <label for="checkin">Check-In</label><br>
+                <input type="date" name="date" id="checkin">
+            </div>
+            <div class="data">
+                <label for="checkout">Check-Out</label><br>
+                <input type="date" name="date" id="chcekout">
+            </div>
+            <div class="data">
+                <label for="room">Room</label><br>
+                <input type="text" name="number" id="number" placeholder="No of Room you wanted">
+            </div>
+            <div class="data">
+                <label for="child">Children</label><br>
+                <input type="text" name="number" id="child" placeholder="No of children">
+            </div>
+            <div class="data">
+                <label for="adult">Adult</label><br>
+                <input type="text" name="number" id="adult" placeholder="No of Adult">
+            </div>
+        </div>
+
+        <div class="second">
+            <button class="btn1" id="btn" > <i class="fa-solid fa-magnifying-glass"></i> Check for Availability</button>
+        </div>
+    </section>
+
+<!-- This is the section of the page which tells about the Hotel overview of the Hotel. -->
+    <section class="about-hotel" id="about">
+        <div class="first-hotel">
+            <h1 class="heading">ABOUT</h1>
+            <div class="about">
+                Imperial Hotel & Spa is a family-friendly hotel that offers a wide range of accommodation types, from rooms to suites. All this in the peaceful surroundings of our beautiful gardens, will make your time at here an unforgettable holiday.
+                Esteemed guests are welcome to relax and unwind in a quiet and elegant setting in the popular resort and enjoy a genuine experience of leisure, pleasure, gastronomy and wellness within the premises of the resort
+                In a small hotel area traditional village, which is one of the most beautiful and picturesque places, we chose to build a lovely high quality hotel which will give our guests the opportunity to experience a holiday with wonderful surroundings of nature and at the same time luxury and coziness.
+                Imperial Hotel offers you a privileged experience combining comfort and conviviality. Whether you are a backpacker, a solo traveler or with your family, our hotel with top-of-the-range service will meet all your expectations. More than just a hotel, Imperial Hotel offers you a place to live and meet people.
+            </div>
+        </div>
+        <div class="about-image">
+            <img class="img1" src="./Image/Img1.jpg" alt="">
+        </div>
+    </section>
+
+<!-- This is the section of the page for the features of the Hotel.
+<section class="feature">
+    <h1 class="heading">Features</h1>
+    <div class="features">
+        <div class="f-content">
+            <h1><i class="fa-sharp fa-solid fa-bell-concierge"></i></h1>
+            <h3>Excellent Food and Drinks</h3>
+        </div>
+        <div class="f-content">
+            <h1><i class="fa-solid fa-hotel"></i></h1>
+            <h3>Simple Booking</h3>
+        </div>
+        <div class="f-content">
+            <h1><i class="fa-sharp fa-solid fa-bell-concierge"></i></h1>
+            <h3>Excellent Food and Drinks</h3>
+        </div>
+        <div class="f-content">
+            <h1><i class="fa-sharp fa-solid fa-bell-concierge"></i></h1>
+            <h3>Excellent Food and Drinks</h3>
+        </div>
+        <div class="f-content">
+            <h1><i class="fa-sharp fa-solid fa-bell-concierge"></i></h1>
+            <h3>Excellent Food and Drinks</h3>
+        </div>
+        <div class="f-content">
+            <h1><i class="fa-sharp fa-solid fa-bell-concierge"></i></h1>
+            <h3>Excellent Food and Drinks</h3>
+        </div>
+    </div>
+</section> -->
+
+<!-- This is the section of the page for the Room tour. -->
+    <section class="room" id="room">
+        <h1 class="heading">Rooms</h1>
+        <div class="rooms">
+            <div class="room-img">
+                <img class="room1" src="./Image2/Room1.jpeg" alt="">
+            </div>
+            <div class="room-img">
+                <img class="room1" src="./Image2/Room2.jpeg" alt="">
+            </div>
+            <div class="room-img">
+                <img class="room1" src="./Image2/Room3.jpeg" alt="">
+            </div>
+            <div class="room-img">
+                <img class="room1" src="./Image2/Room4.jpeg" alt="">
+            </div>
+            <div class="room-img">
+                <img class="room1" src="./Image2/Room10.jpeg" alt="">
+            </div>
+            <div class="room-img">
+                <img class="room1" src="./Image2/Room6.jpeg" alt="">
+            </div>
+            <div class="room-img">
+                <img class="room1" src="./Image2/Room7.jpeg" alt="">
+            </div>
+            <div class="room-img">
+                <img class="room1" src="./Image2/Room8.jpeg" alt="">
+            </div>
+            <div class="room-img">
+                <img class="room1" src="./Image2/Room9.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+
+<!-- This is the section of the page for the queries related. -->
+    <section class="faqs" id="faqs">
+        <h1 class="heading">FAQ's</h1>
+        <div class="question">
+            <div class="answer">
+                <h2>What time can I check-in and check-out?</h2>
+                <p>Standard check-in time is at 2 PM and check-out at 12 PM. Kindly note that check-in time may be shifted to 3:00 PM during high occupancy periods. You can ente</p>
+            </div>
+            <div class="answer">
+                <h2>How is the WI-FI connection in the rooms?</h2>
+                <p>Stay connected during your stay with 100MB bandwidth internet service provided throught our guest room and public areas. You can log in with your username and password provided at the check-in.Username is your room number. Password is followed by room number. Eg: USERNAME:4240 PASSWORD: 4240</p>
+            </div>
+            <div class="answer">
+                <h2>What is your Linen and Damage Policy?</h2>
+                <p>Please note that additional charges are applicable for linen stains and other cleaning or damages caused intentionally or unintentionally. Penalties vary depending on the extent and severity of the damage. These include, but are not limited to, cleaning, repair, or replacement charges for stained walls, vomit, blood and food stain on linens, and broken furniture and fittings. The exact cost will be determined on a case-by-case basis by the Manager in charge.</p>
+            </div>
+            <div class="answer">
+                <h2>What is your smoking Policy?</h2>
+                <p>Healthier. Happier. Fresher. I’M Hotel is committed to catering to the needs of all guests. A designated smoking area is located on the 2nd floor for your convenience. However, usage of shisha, cigarettes, vape pens, and e-cigarettes is prohibited in all guest rooms. A fee equivalent to INR 10,000.00 per incident will be charged to your account if a smoking incident occurs in your room during your stay.</p>
+            </div>
+            <div class="answer">
+                <h2>Do you have an Elevator?</h2>
+                <p>We are equipped with six (6) guest elevators (3 high rise, 3 low rise elevators) and two (2) separate elevators serving the spa floors. Guest elevators are equipped with a high-level security feature that enables guests to access each designated floor using a keycard.</p>
+            </div>
+            <div class="answer">
+                <h2>Does the online rate include breakfast??</h2>
+                <p>Yes, we do have breakfast included in our online offerings! All rates can be accessed here.With our best rate guarantee, our direct online rate is definitely more favourable than online travel agencies such as booking.com, Agoda, and Expedia. Simply opt for our Best Available Rate (with breakfast).</p>
+            </div>
+            <div class="answer">
+                <h2>Will a security deposit be required upon check-in?</h2>
+                <p>The hotel requires an incidental deposit that may be settled through cash or credit card upon check-in. It is fully refundable if not used. If you are using a credit card, released upon check-out. Kindly note that it might take at least 7-14 banking days for your bank to activate the release.</p>
+            </div>
+            <div class="answer">
+                <h2>How to report about something else?</h2>
+                <p>For the query related to the Hotel, please free to drop the mail at the <u>"hotelimperial31@gmail.com"</u></p>
+            </div>
+        </div>
+    </section>
+
+<!-- This is the sectio for the testimonials of the Website. -->
+    <section class="testimonials" id="testimonials">
+        <h1 class="heading">TESTIMONIALS</h1>
+        <div class="testimonials1">
+            <div class="people">
+                <img class="owner" src="./Image/People.jpeg" alt="">
+                <h2>Scarlet Johanson, Georgia, USA</h2>
+                <p>The service at the Hotel Monteleone was exceptional. There was absolutely no issue that was not addressed timely and with satisfactory results. We were particulary impressed with how the hotel staff anticipated our needs. Numerous conference attendees commented on the quality of the food, the quality of the service and overall positive attitude toward the conference site.</p>
+            </div>
+            <div class="people">
+                <img class="owner" src="./Image/People2.jpeg" alt="">
+                <h2>Ravi Kumar - Jalandhar, India</h2>
+                <p>The hotel staff was beyond exceptional. During the past twenty years I have hosted hundreds of events at dozens of hotels and I can’t recall ever having things run as smoothly as they did for us at the Monteleone. We had very few “last minute changes” but those we had were handled flawlessly.</p>
+            </div>
+            <div class="people">
+                <img class="owner" src="./Image/People3.jpeg" alt="">
+                <h2>Tom holland, Sydney, Australia</h2>
+                <p>Where do I start, I was so pleased with the meeting location and space and wanted to say thank you. The hospitality in this hotel has been nothing short of “Service Excellence” The rooms are spacious, clean and super comfortable. The banquet staff was extremely attentive to every detail and very professional.</p>
+            </div>
+        </div>
+    </section>
+
+<!-- This is the section of the page telling about the owner of the Hotel. -->
+    <section class="about-us" id="about-us">
+        <h1 class="heading">ABOUT-OWNER's</h1>
+        <div class="about-us1">
+            <div class="niraj">
+                <h1>CMD</h1>
+                <img class="owner" src="./Owner/Niraj.jpg" alt="niraj">
+                <h3>Niraj Jha</h3>
+            </div>
+            <div class="niraj">
+                <h1>CEO</h1>
+                <img class="owner" src="./Owner/Mayank.jpeg" alt="niraj">
+                <h3>Mayank</h3>
+            </div>
+            <div class="niraj">
+                <h1>Manager</h1>
+                <img class="owner" src="./Owner/Satyam.jpg" alt="niraj">
+                <h3>Satyam</h3>
+            </div>
+        </div>
+    </section>
+
+<!-- This is the Footer section of the page.-->
+    <section class="Footer-section">
+        <div class="media-link">
+            <h4><a class="channels" href="https://www.linkedin.com/in/niraj-jha-07119a22a/" target=_blank"><i class="fa-brands fa-linkedin media"></i></a></h4>
+            <h4><a class="channels" href="https://www.instagram.com/iam.nirajjha/" target="_blank"><i class="fa-brands fa-instagram media"></i></a></h4>
+            <h4><a class="channels" href="https://twitter.com/NirajJh80472344" target=_blank"><i class="fa-brands fa-twitter media"></i></a></h4>
+            <h4><a class="channels" href="https://www.facebook.com/jhaniraj3110/" target=_blank"><i class="fa-brands fa-facebook media"></i></a></h4>
+        </div>
+        <div class="copyright">
+            <h6>@copyright <span class="name">Hotel IMPERIAL</span></h6>
+            <h5>Made with <i class="fa-solid fa-heart heart"></i> by <span class="name">Mayank, Niraj and Satyam</span></h5>
+        </div>
+        <div class="arrow">
+            <h2 class="top"><a href="#navbar"><i class="fa-solid fa-arrow-up"></i></a></h2>
+        </div>
+    </section>
+    <script src="project.js"></script>
+</body>
+</html>
